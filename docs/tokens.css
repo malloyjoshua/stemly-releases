@@ -1,0 +1,39 @@
+:root {
+  --space-3xs: 2px; --space-2xs: 4px; --space-xs: 8px; --space-sm: 12px; --space-md: 16px; --space-lg: 24px; --space-xl: 40px; --space-2xl: 64px; --space-3xl: 96px; --space-4xl: 144px;
+  --text-xs: 0.8125rem; --text-sm: 0.875rem; --text-md: 1rem; --text-lg: 1.25rem; --text-xl: 1.5625rem; --text-2xl: 1.953rem; --text-3xl: 2.441rem;
+  --text-display-s: clamp(2.25rem, 4vw + 0.5rem, 3.75rem); --text-display: clamp(2.75rem, 5vw + 1rem, 5.25rem);
+  --text-section: clamp(2rem, 2.5vw + 1rem, 3.5rem); --text-title: clamp(1.25rem, 0.75vw + 0.875rem, 1.625rem); --text-lead: clamp(1.125rem, 0.35vw + 1rem, 1.375rem);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1); --ease-in: cubic-bezier(0.7, 0, 0.84, 0); --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-micro: 120ms; --dur-short: 220ms; --dur-long: 420ms;
+  --color-error: oklch(52% 0.19 27); --color-success: oklch(50% 0.12 150);
+  --container: 1440px; --gutter: 64px; --gap-columns: 32px; --section-gap-s: 120px; --section-gap: 144px; --section-gap-l: 176px;
+  --z-base: 1; --z-raised: 10; --z-dropdown: 100; --z-sticky: 200; --z-sticky-nav: 300; --z-modal: 400; --z-toast: 500; --z-tooltip: 600;
+  color-scheme: light dark;
+  /* Stemly's own surfaces: neutral, faintly cool, ink as the one solid. */
+  --color-paper: oklch(98.4% 0.004 260); --color-paper-2: oklch(95.6% 0.005 260); --color-paper-3: oklch(92.6% 0.006 260);
+  --color-ink: oklch(19% 0.008 260); --color-ink-2: oklch(34% 0.008 260); --color-muted: oklch(47% 0.008 260);
+  --color-rule: oklch(88% 0.006 260);
+  --color-ink-on: oklch(98.4% 0.004 260);
+  /* The signal is the vocal stem's pink: focus rings and link hovers only. */
+  --color-accent: oklch(60% 0.2 8); --color-accent-ink: oklch(98.4% 0.004 260); --color-focus: oklch(58% 0.2 8);
+  /* The six stems and the merged track, as in the app's mixer. */
+  --color-stem-vocals: oklch(64% 0.21 8); --color-stem-drums: oklch(74% 0.16 58); --color-stem-bass: oklch(60% 0.2 312);
+  --color-stem-guitar: oklch(70% 0.18 146); --color-stem-keys: oklch(60% 0.19 255); --color-stem-other: oklch(66% 0.01 260);
+  --color-stem-rest: oklch(72% 0.11 210);
+  --font-display: -apple-system, BlinkMacSystemFont, "SF Pro Display", ui-sans-serif, system-ui, sans-serif;
+  --font-body: -apple-system, BlinkMacSystemFont, "SF Pro Text", ui-sans-serif, system-ui, sans-serif; --font-outlier: ui-monospace, "SF Mono", Menlo, monospace;
+  --radius-card: 14px; --radius-control: 10px; --radius-pill: 999px; --rule-hair: 1px;
+  --shadow-card: 0 1px 2px oklch(20% 0.01 260 / 0.05);
+  --tracking-display: -0.03em;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-paper: oklch(15.5% 0.008 260); --color-paper-2: oklch(19% 0.009 260); --color-paper-3: oklch(22% 0.01 260);
+    --color-ink: oklch(94% 0.006 260); --color-ink-2: oklch(82% 0.006 260); --color-muted: oklch(70% 0.007 260);
+    --color-rule: oklch(30% 0.01 260);
+    --color-ink-on: oklch(15.5% 0.008 260);
+    --color-accent: oklch(67% 0.17 8); --color-accent-ink: oklch(15.5% 0.008 260); --color-focus: oklch(68% 0.18 8);
+    --shadow-card: none;
+  }
+}
